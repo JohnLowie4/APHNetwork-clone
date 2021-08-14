@@ -8,6 +8,7 @@
   - Has the first 10 reviews
   - Has a page navigator on the bottom of the 10th review
   - Has a "Upcoming" section on the right hand side
+  - Will have the most recent reviews at the top of the page cycling through
 
 - ### Categories
 
@@ -40,3 +41,9 @@
 - Connect with us links
 - Trademark
 - Copyright information
+
+## Alternative Ideas
+
+- We can use little buttons at the top of the reviews as categories kinda like [IGN](https://www.ign.com/ca)
+- each list of review in the homepage can have the same styling as [Medium](https://medium.com/) or we can just stick with [IGN](https://www.ign.com/ca) styling
+- navigation bar can have something similar to [The Huffington Post](https://www.huffpost.com/) but doesn't need to
