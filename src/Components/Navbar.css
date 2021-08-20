@@ -1,0 +1,16 @@
+.NavbarItems {
+  display: flex;
+}
+
+.navbar-logo-name {
+  display: flex;
+}
+
+.routes {
+  list-style: none;
+  display: flex;
+}
+
+.routes li {
+  padding: 5%;
+}
