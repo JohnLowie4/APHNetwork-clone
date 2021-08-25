@@ -9,8 +9,8 @@ class Navbar extends Component {
         <div className="navbar-logo-name">
           <img src={logo} className="navbar-logo" alt="APH logo"/>
           <div className="navbar-name">
-            <h1>APH Networks</h1>
-            <h4>Since Forever</h4>
+            <div>APH Networks</div>
+            <div>Since Forever</div>
           </div>
         </div>
         <div className="navbar-routes">
