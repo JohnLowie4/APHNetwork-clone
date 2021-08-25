@@ -5,11 +5,13 @@
   background-color: rgba(21, 22, 26, 0.88);
   color: white;
   padding: 10px 10% 10px 10%;
+  font-family: "Monsterrat", sans-serif;
 }
 
 .navbar-logo-name {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .navbar-logo img {
@@ -21,9 +23,19 @@
 .navbar-name {
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-content: center;
+  justify-content: center;
   padding-left: 10px;
   text-align: left;
+  font-family: "Monsterrat", sans-serif;
+}
+
+.navbar-name .brand {
+  font-size: 1.6em;
+}
+
+.navbar-name .moto {
+  font-size: 1em;
 }
 
 .navbar-name h1 {
@@ -43,4 +55,9 @@
 li {
   list-style: none;
   padding: 0 25px 0 25px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
