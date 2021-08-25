@@ -5,6 +5,7 @@
   background-color: rgba(21, 22, 26, 0.88);
   color: white;
   padding: 10px 10% 10px 10%;
+  font-family: "Monsterrat", sans-serif;
 }
 
 .navbar-logo-name {
@@ -24,6 +25,7 @@
   align-content: flex-end;
   padding-left: 10px;
   text-align: left;
+  font-family: "Monsterrat", sans-serif;
 }
 
 .navbar-name h1 {
