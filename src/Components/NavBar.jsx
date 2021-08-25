@@ -7,18 +7,18 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems">
         <div className="navbar-logo-name">
-          <img src={logo} className="navbar-logo" alt="APH logo"/>
+          <a href=""><img src={logo} className="navbar-logo" alt="APH logo"/></a>
           <div className="navbar-name">
-            <div>APH Networks</div>
-            <div>Since Forever</div>
+            <div className="brand"><a href="">APH Networks</a></div>
+            <div className="moto">Since Forever</div>
           </div>
         </div>
         <div className="navbar-routes">
           <ul className="routes">
-            <li>Home</li>
-            <li>Categories</li>
-            <li>Upcoming</li>
-            <li>About</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Upcoming</a></li>
+            <li><a href="">About</a></li>
           </ul>
         </div>
 
