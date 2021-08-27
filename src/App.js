@@ -11,12 +11,22 @@ import Home from "./Components/Home";
 import Categories from "./Components/Categories";
 import Upcoming from "./Components/Upcoming";
 import About from "./Components/About";
+import logo from "./img/aph-logo.png";
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <ul>
+      <div className="Navbar">
+        <Link to="/">
+          <div className="navbar-logo">
+            <img src={logo} alt="APH logo" />
+          </div>
+          <div className="navbar-brand">
+            <div className="brand">APH Networks</div>
+            <div className="moto">Since Forever</div>
+          </div>
+        </Link>
+        <ul className="nav-routes">
           <li>
             <Link to="/">Home</Link>
           </li>
