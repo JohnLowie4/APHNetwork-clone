@@ -8,8 +8,9 @@ import {
   useParams,
 } from "react-router-dom";
 import Home from "./Components/Home";
+import Categories from "./Components/Categories";
+import Upcoming from "./Components/Upcoming";
 import About from "./Components/About";
-import Topics from "./Components/Topics";
 
 export default function App() {
   return (
@@ -20,22 +21,28 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/categories">Categories</Link>
           </li>
           <li>
-            <Link to="/topics">Topics</Link>
+            <Link to="/upcoming">Upcoming</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+          <Route path="/upcoming">
+            <Upcoming />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </div>
