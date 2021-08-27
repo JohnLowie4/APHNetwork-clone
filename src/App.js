@@ -8,32 +8,50 @@ import {
   useParams,
 } from "react-router-dom";
 import Home from "./Components/Home";
+import Categories from "./Components/Categories";
+import Upcoming from "./Components/Upcoming";
 import About from "./Components/About";
-import Topics from "./Components/Topics";
+import logo from "./img/aph-logo.png";
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <ul>
+      <div className="Navbar">
+        <Link to="/">
+          <div className="navbar-logo">
+            <img src={logo} alt="APH logo" />
+          </div>
+          <div className="navbar-brand">
+            <div className="brand">APH Networks</div>
+            <div className="moto">Since Forever</div>
+          </div>
+        </Link>
+        <ul className="nav-routes">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/categories">Categories</Link>
           </li>
           <li>
-            <Link to="/topics">Topics</Link>
+            <Link to="/upcoming">Upcoming</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
 
         <Switch>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+          <Route path="/upcoming">
+            <Upcoming />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route>
+          {/* Home path must be last in order to render everything else properly */}
           <Route path="/">
             <Home />
           </Route>
