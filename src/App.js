@@ -32,9 +32,6 @@ export default function App() {
         </ul>
 
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/categories">
             <Categories />
           </Route>
@@ -43,6 +40,10 @@ export default function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          {/* Home path must be last in order to render everything else properly */}
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
