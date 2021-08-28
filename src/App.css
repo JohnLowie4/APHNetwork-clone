@@ -27,6 +27,14 @@
   font-size: 1em;
 }
 
+.menu-icon {
+  display: none;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
 .nav-routes {
   display: flex;
   align-items: center;
@@ -34,5 +42,35 @@
 
 li {
   list-style: none;
-  padding: 0 25px 0 25px;
+  padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .Navbar {
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Navbar {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav-routes {
+    display: none;
+  }
+
+  .nav-routes.active {
+    display: contents;
+  }
+
+  .menu-icon {
+    display: contents;
+  }
+
+  .fa-bars {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+  }
 }

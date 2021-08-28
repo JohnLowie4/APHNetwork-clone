@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +15,12 @@ import About from "./Components/About";
 import logo from "./img/aph-logo.png";
 
 export default function App() {
+  const [state, setState] = useState(false);
+
+  function handleClick() {
+    setState(!state);
+  }
+
   return (
     <Router>
       <div className="Navbar">
@@ -29,7 +35,10 @@ export default function App() {
             </div>
           </div>
         </Link>
-        <ul className="nav-routes">
+        <div className="menu-icon" onClick={handleClick}>
+          <i className="fas fa-bars"></i>
+        </div>
+        <ul className={state ? "nav-routes active" : "nav-routes"}>
           <li>
             <Link to="/" style={linkStyle}>
               Home
