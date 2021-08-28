@@ -62,7 +62,7 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          {/* Home path must be last in order to render everything else properly */}
+          {/* Home path must be last in order to render other Links properly */}
           <Route path="/">
             <Home />
           </Route>
@@ -74,4 +74,5 @@ export default function App() {
 
 const linkStyle = {
   textDecoration: "none",
+  color: "#fff",
 };
