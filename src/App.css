@@ -27,9 +27,12 @@
   font-size: 1em;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .fa-bars {
   color: #fff;
-  font-size: 1.5em;
 }
 
 .nav-routes {
@@ -54,7 +57,20 @@ li {
   }
 
   .nav-routes {
-    display: flex;
-    flex-direction: column;
+    display: none;
+  }
+
+  .nav-routes.active {
+    display: contents;
+  }
+
+  .menu-icon {
+    display: contents;
+  }
+
+  .fa-bars {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
   }
 }

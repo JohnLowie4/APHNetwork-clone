@@ -36,7 +36,7 @@ export default function App() {
           </div>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
-          <i className={state ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className="fas fa-bars"></i>
         </div>
         <ul className={state ? "nav-routes active" : "nav-routes"}>
           <li>
