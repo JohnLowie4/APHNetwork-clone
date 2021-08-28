@@ -7,6 +7,7 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
+import "./App.css";
 import Home from "./Components/Home";
 import Categories from "./Components/Categories";
 import Upcoming from "./Components/Upcoming";
@@ -17,13 +18,15 @@ export default function App() {
   return (
     <Router>
       <div className="Navbar">
-        <Link to="/">
-          <div className="navbar-logo">
-            <img src={logo} alt="APH logo" />
-          </div>
-          <div className="navbar-brand">
-            <div className="brand">APH Networks</div>
-            <div className="moto">Since Forever</div>
+        <Link to="/" style={linkStyle}>
+          <div className="navbar-logo-brand">
+            <div className="navbar-logo">
+              <img src={logo} alt="APH logo" />
+            </div>
+            <div className="navbar-brand">
+              <div className="brand">APH Networks</div>
+              <div className="moto">Since Forever</div>
+            </div>
           </div>
         </Link>
         <ul className="nav-routes">
@@ -60,3 +63,7 @@ export default function App() {
     </Router>
   );
 }
+
+const linkStyle = {
+  textDecoration: "none",
+};
