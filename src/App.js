@@ -7,6 +7,7 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
+import "./App.css";
 import Home from "./Components/Home";
 import Categories from "./Components/Categories";
 import Upcoming from "./Components/Upcoming";
@@ -17,27 +18,37 @@ export default function App() {
   return (
     <Router>
       <div className="Navbar">
-        <Link to="/">
-          <div className="navbar-logo">
-            <img src={logo} alt="APH logo" />
-          </div>
-          <div className="navbar-brand">
-            <div className="brand">APH Networks</div>
-            <div className="moto">Since Forever</div>
+        <Link to="/" style={linkStyle}>
+          <div className="navbar-logo-brand">
+            <div className="navbar-logo">
+              <img src={logo} alt="APH logo" />
+            </div>
+            <div className="navbar-brand">
+              <div className="brand">APH Networks</div>
+              <div className="moto">Since Forever</div>
+            </div>
           </div>
         </Link>
         <ul className="nav-routes">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={linkStyle}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/categories">Categories</Link>
+            <Link to="/categories" style={linkStyle}>
+              Categories
+            </Link>
           </li>
           <li>
-            <Link to="/upcoming">Upcoming</Link>
+            <Link to="/upcoming" style={linkStyle}>
+              Upcoming
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" style={linkStyle}>
+              About
+            </Link>
           </li>
         </ul>
 
@@ -51,7 +62,7 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          {/* Home path must be last in order to render everything else properly */}
+          {/* Home path must be last in order to render other Links properly */}
           <Route path="/">
             <Home />
           </Route>
@@ -60,3 +71,8 @@ export default function App() {
     </Router>
   );
 }
+
+const linkStyle = {
+  textDecoration: "none",
+  color: "#fff",
+};
