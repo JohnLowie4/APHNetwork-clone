@@ -31,16 +31,24 @@ export default function App() {
         </Link>
         <ul className="nav-routes">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={linkStyle}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/categories">Categories</Link>
+            <Link to="/categories" style={linkStyle}>
+              Categories
+            </Link>
           </li>
           <li>
-            <Link to="/upcoming">Upcoming</Link>
+            <Link to="/upcoming" style={linkStyle}>
+              Upcoming
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" style={linkStyle}>
+              About
+            </Link>
           </li>
         </ul>
 
